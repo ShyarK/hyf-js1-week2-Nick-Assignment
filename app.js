@@ -68,7 +68,7 @@ console.log(removeWords1('Hello, it is a Good day, I eat good bananas, I do not 
 // used toLowerCase() method for case-insensitive search.
 // I know it is a long algorithm, but here I learned how to turn string to an array and array to a string!
 const str2 = 'Hello, it is a Good day, I eat good bananas, I do not like the word good';
-const removeWords2 = string.split(' ').filter(word => word.toLowerCase() !== 'good').join(' ');
+const removeWords2 = str2.split(' ').filter(word => word.toLowerCase() !== 'good').join(' ');
 
 console.log(removeWords2);
 
