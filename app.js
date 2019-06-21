@@ -57,9 +57,20 @@ console.log(petsNameAndSound);
 //g is a global search.
 //i is a case-insensitive search.
 
-const removeWords1 = (str, regex) => newStr = str.replace(regex, '');
+//-First solution:
+const removeWords1 = (str1, regex) => newStr = str1.replace(regex, '');
 console.log(removeWords1('Hello, it is a Good day, I eat good bananas, I do not like the word good', /good/gi));
 
+//-Second solution
+// I used split method which is a string method to split a string into an array, so will help me to use the array methods.
+// I used filter, to return a new array, with all items that passed the condition inside call the back function.
+// Then I used a join method to return an array to a string.
+// used toLowerCase() method for case-insensitive search.
+// I know it is a long algorithm, but here I learned how to turn string to an array and array to a string!
+const str2 = 'Hello, it is a Good day, I eat good bananas, I do not like the word good';
+const removeWords2 = string.split(' ').filter(word => word.toLowerCase() !== 'good').join(' ');
+
+console.log(removeWords2);
 
 //Conditionals
 // Write a program that prints out, 
