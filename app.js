@@ -62,7 +62,7 @@ const removeWords1 = (str1, regex) => newStr = str1.replace(regex, '');
 console.log(removeWords1('Hello, it is a Good day, I eat good bananas, I do not like the word good', /good/gi));
 
 //-Second solution
-// I used split method which is a string method to split a string into an array, so will help me to use the array methods.
+// I used split method, which is a string method, to split a string into an array, so that can help me to use the array methods.
 // I used filter, to return a new array, with all items that passed the condition inside call the back function.
 // Then I used a join method to return an array to a string.
 // used toLowerCase() method for case-insensitive search.
