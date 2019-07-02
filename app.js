@@ -79,13 +79,13 @@ console.log(removeWords2);
 // I checked if all the numbers can be divided by 3 and get the remainder of 0. 
 
 // -first solution:
-const numbers = [];
+
 
 const countdown1 = num => {
-    for (let i = num; i > 0; i--){
-        numbers.push(i); 
+    const numbers = [];
+    for (let i = num; i > 0; i--){  
         if (i % 3 === 0) {
-            console.log(i); 
+             numbers.push(i);
         }
     }
     return numbers;
@@ -95,7 +95,7 @@ countdown1(200);
 
 //-Second solution: 
 // Here I just tried to use another way to return a new array with all the numbers that passed the condetion.
-const countdown2 = numbers.filter(num => num % 3 === 0);
+const countdown2 = [...Array(200).keys()].reverse().filter(num => num % 3 === 0);
 
 console.log(countdown2);
 
